@@ -1,0 +1,117 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#171715" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} — A contraluz</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="A contraluz, inicio">A CONTRALUZ</a>
+      <span class="header-note">Conversaciones para mirar despacio</span>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <a href="/">A CONTRALUZ</a>
+      <span>Hecho con calma, texto a texto.</span>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: dark;
+    --paper: #171715;
+    --ink: #f0eee8;
+    --muted: #aaa69e;
+    --line: #3b3934;
+    --accent: #c5b69d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    background:
+      radial-gradient(ellipse 72% 34% at 50% 0%, rgb(133 120 99 / 18%), transparent 100%),
+      radial-gradient(ellipse 52% 32% at 100% 45%, rgb(95 91 81 / 11%), transparent 100%),
+      var(--paper);
+    background-attachment: fixed;
+    color: var(--ink);
+  }
+
+  body {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 clamp(1.25rem, 5vw, 5rem);
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .site-header,
+  .site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid var(--line);
+    padding: 1.4rem 0;
+  }
+
+  .wordmark,
+  .site-footer a {
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-decoration: none;
+  }
+
+  .header-note,
+  .site-footer span {
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  main {
+    min-height: 70vh;
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--line);
+    border-bottom: 0;
+    margin-top: 6rem;
+  }
+
+  @media (max-width: 560px) {
+    .header-note {
+      max-width: 10rem;
+      text-align: right;
+    }
+
+    .site-footer {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+</style>

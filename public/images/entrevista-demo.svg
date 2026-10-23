@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Retrato ilustrado para la entrevista de muestra</title>
+  <desc id="desc">Composición abstracta en blanco y negro de una persona junto a una ventana.</desc>
+  <rect width="1200" height="760" fill="#d5d2cb"/>
+  <rect x="55" y="48" width="470" height="664" fill="#eeeae2"/>
+  <path d="M290 48v664M55 380h470" stroke="#77746e" stroke-width="8"/>
+  <path d="M525 712V450c0-145 104-253 232-253s232 108 232 253v262H525Z" fill="#272725"/>
+  <ellipse cx="755" cy="327" rx="129" ry="162" fill="#a9a59e"/>
+  <path d="M626 316c8-112 59-172 143-172 82 0 131 64 131 157-34-30-70-42-109-41-53 2-99 28-165 56Z" fill="#292927"/>
+  <path d="M680 370c23 17 47 25 73 25 27 0 51-8 74-25" fill="none" stroke="#514f4b" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="710" cy="329" r="7" fill="#272725"/>
+  <circle cx="800" cy="329" r="7" fill="#272725"/>
+  <path d="M751 337l-13 47h27" fill="none" stroke="#706d67" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M525 712h464v-79c-78-62-159-92-242-92-78 0-151 28-222 85v86Z" fill="#44423e"/>
+  <rect y="712" width="1200" height="48" fill="#222220"/>
+</svg>

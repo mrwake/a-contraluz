@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Celia en su cocina</title>
+  <desc id="desc">Retrato ilustrado monocromático de una cocinera ficticia en una cocina de barrio.</desc>
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1">
+      <stop stop-color="#77736c"/>
+      <stop offset="1" stop-color="#343330"/>
+    </linearGradient>
+    <linearGradient id="window" x2="1" y2="1">
+      <stop stop-color="#dedbd3"/>
+      <stop offset="1" stop-color="#85827b"/>
+    </linearGradient>
+    <linearGradient id="apron" x2="0" y2="1">
+      <stop stop-color="#d1cec6"/>
+      <stop offset="1" stop-color="#8a8780"/>
+    </linearGradient>
+    <radialGradient id="skin" cx="42%" cy="34%" r="69%">
+      <stop stop-color="#d2cfc7"/>
+      <stop offset=".72" stop-color="#aaa69e"/>
+      <stop offset="1" stop-color="#76736d"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#wall)"/>
+  <rect x="60" y="65" width="300" height="355" fill="#282826"/>
+  <rect x="78" y="83" width="264" height="319" fill="url(#window)"/>
+  <path d="M210 83v319M78 242h264" stroke="#514f4a" stroke-width="12"/>
+  <path d="M0 460h1200v300H0z" fill="#262624"/>
+  <path d="M510 760V450c0-88 57-147 150-147s150 59 150 147v310Z" fill="url(#apron)"/>
+  <path d="M569 270c-28 22-34 68-14 95 12 17 29 22 48 17m111-2c23 8 44 1 57-17 19-27 13-73-13-95" fill="#87837c"/>
+  <path d="M569 366c-17-31-17-111 3-154 20-42 54-65 97-65 47 0 81 24 99 66 19 44 16 122-4 153-20 32-50 51-96 51-47 0-79-19-99-51Z" fill="url(#skin)"/>
+  <path d="M584 305c4 42 20 77 47 98-33-4-57-20-70-47-8-18-10-40-8-62Zm173-7c1 42-8 75-28 98 36-3 59-19 70-48 6-16 8-34 5-55Z" fill="#77736c" opacity=".22"/>
+  <path d="M556 261c-14-100 26-164 112-164 86 0 129 64 115 163-24-30-50-44-81-44-50 0-78 40-146 45Z" fill="#292927"/>
+  <path d="M568 199c12-79 50-120 108-120s96 41 108 120c-27-22-62-34-108-34s-81 12-108 34Z" fill="#ddd9d1"/>
+  <path d="M602 242c13-8 29-8 42-1m51 1c13-8 29-8 42-1" fill="none" stroke="#55524c" stroke-width="6" stroke-linecap="round"/>
+  <path d="M604 260c12-13 27-14 41-2-11 16-29 17-41 2Zm99-2c14-12 29-11 41 2-12 15-30 14-41-2Z" fill="#e1ded6"/>
+  <ellipse cx="625" cy="260" rx="5" ry="8" fill="#292927"/>
+  <ellipse cx="724" cy="260" rx="5" ry="8" fill="#292927"/>
+  <path d="M654 269c-7 22-12 37-13 44h35m-27-2 11 2" fill="none" stroke="#77736d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M634 329c18-8 38-9 57-5 16 3 29 1 42-5m-95 16c16 7 32 9 48 9 17 0 32-4 45-11" fill="none" stroke="#625e57" stroke-width="5" stroke-linecap="round"/>
+  <path d="M612 291c3 3 7 4 11 3m83 0c4 1 8 0 11-3" fill="none" stroke="#8c8880" stroke-width="3"/>
+  <path d="M568 422c28 45 62 67 102 67 41 0 77-23 106-68" fill="none" stroke="#efede7" stroke-width="10"/>
+  <path d="M0 568h390v192H0z" fill="#3a3935"/>
+  <path d="M30 557h320v23H30zm42-77h238v78H72z" fill="#77736c"/>
+  <path d="M97 479c17-39 33-47 52-24 13 15 17 34 20 53H97Zm105 5c10-47 31-67 54-42 15 16 21 37 24 66h-78Z" fill="#b2aea6"/>
+  <path d="M852 480h300v29H852z" fill="#77736c"/>
+  <path d="M897 410h209v70H897z" fill="#3a3935"/>
+  <path d="M923 393c5-26 20-40 43-40s38 14 43 40Zm109-9c8-34 25-51 52-51s44 17 52 51Z" fill="#aaa69f"/>
+  <path d="M0 681h1200v79H0z" fill="#1e1e1c"/>
+  <path d="M412 128c2 2 4 4 6 6m278 43 5 4m-199-55 3 5m332 172 5 3M402 523l5 4m442-92 4 5m-223 190 5 3m291-219 4 5" stroke="#f0eee8" stroke-opacity=".24" stroke-width="3"/>
+</svg>
