@@ -28,7 +28,7 @@ Las entrevistas y los retratos ficticios incluidos son solo demostraciones; reem
 
 El proyecto ya incluye `netlify.toml` con el comando de compilación y la carpeta de salida. Para activar publicaciones automáticas:
 
-1. Crea un repositorio en GitHub. Para empezar, puede ser privado; Netlify puede compilarlo sin hacerlo público.
+1. Crea un repositorio en GitHub; puede ser público o privado. El sitio desplegado será público.
 2. Sube el contenido del proyecto al repositorio, pero no incluyas `node_modules/`, `dist/` ni `.astro/`; están excluidos por `.gitignore`.
 3. En Netlify, elige **Add new project → Import an existing project** y conecta tu cuenta de GitHub.
 4. Selecciona el repositorio y confirma estos ajustes si te los pide:
@@ -36,7 +36,7 @@ El proyecto ya incluye `netlify.toml` con el comando de compilación y la carpet
    - Publish directory: `dist`
 5. Pulsa **Deploy**. Netlify te dará una dirección temporal `*.netlify.app`. Cada cambio que subas a GitHub podrá generar un nuevo despliegue.
 
-El repositorio privado protege el código de la vista pública, pero no convierte en privado el contenido del sitio desplegado: toda página publicada en una web pública puede verla cualquiera. Las entrevistas ficticias de ejemplo están identificadas como tales; reemplázalas antes de presentar el blog como un archivo de entrevistas reales.
+La visibilidad del código en GitHub no cambia la del sitio desplegado: cualquiera podrá ver las páginas publicadas en la web. Las entrevistas ficticias de ejemplo están identificadas como tales; reemplázalas antes de presentar el blog como un archivo de entrevistas reales.
 
 ## Dominio propio
 
