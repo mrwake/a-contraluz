@@ -3,12 +3,12 @@ title: "El fuego bajo también cuenta"
 description: "Celia Roldán habla de una cocina de barrio, del trabajo invisible y de aprender a no confundir cuidar a los demás con olvidarse de una misma."
 pubDate: 2026-10-24
 person: "Celia Roldán · cocinera"
-cover: "/images/celia-cocinera.svg"
-coverAlt: "Ilustración en blanco y negro de Celia, cocinera ficticia, en la cocina de su pequeño restaurante"
+cover: "/images/gin-tonic-bw.jpg"
+coverAlt: "Vaso con hielo y una rodaja de limón sobre una mesa de madera en un bar"
 draft: false
 ---
 
-> Celia y esta conversación son ficticias. El retrato es una ilustración original, no una fotografía de una persona real.
+> Celia y esta conversación son ficticias. La fotografía muestra una bebida en un bar; no es un retrato de Celia.
 
 ## ¿Qué te gusta de llegar a la cocina antes que todo el mundo?
 
