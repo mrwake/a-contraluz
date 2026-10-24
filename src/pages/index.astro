@@ -14,20 +14,20 @@ const base = import.meta.env.BASE_URL;
   description="Entrevistas, preguntas y retratos en blanco y negro."
 >
   <section class="intro">
-    <p class="eyebrow">UN ARCHIVO DE VOCES Y MIRADAS · MUESTRA FICTICIA</p>
+    <p class="eyebrow">UN ARCHIVO DE VOCES Y MIRADAS</p>
     <h1>Historias que<br />merecen <em>tiempo.</em></h1>
     <p class="intro-copy">
       Cocinas, talleres y vidas contadas sin prisa. Un retrato, unas preguntas
       y espacio para escuchar.
     </p>
-    <p class="sample-note">Los personajes y retratos de esta muestra son inventados.</p>
+    <p class="sample-note">Las entrevistas y los retratos ficticios se identifican en cada historia.</p>
   </section>
 
   {featured && (
     <section class="featured" aria-labelledby="featured-title">
       <a class="featured-image-link" href={`${base}entrevistas/${featured.id}/`}>
         <img
-          class="featured-image"
+          class:list={['featured-image', featured.data.coverPortrait && 'featured-image--portrait']}
           src={`${base}${featured.data.cover.replace(/^\//, '')}`}
           alt={featured.data.coverAlt}
         />
@@ -54,7 +54,12 @@ const base = import.meta.env.BASE_URL;
         {moreInterviews.map((interview) => (
           <article class="archive-card">
             <a href={`${base}entrevistas/${interview.id}/`}>
-              <img src={`${base}${interview.data.cover.replace(/^\//, '')}`} alt={interview.data.coverAlt} loading="lazy" />
+              <img
+                class:list={[interview.data.coverPortrait && 'archive-image--portrait']}
+                src={`${base}${interview.data.cover.replace(/^\//, '')}`}
+                alt={interview.data.coverAlt}
+                loading="lazy"
+              />
               <p class="eyebrow">{interview.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long' })}</p>
               <h3>{interview.data.title}</h3>
               <p class="person">{interview.data.person}</p>
@@ -133,6 +138,16 @@ const base = import.meta.env.BASE_URL;
     object-fit: cover;
     transition: transform 400ms ease;
     width: 100%;
+  }
+
+  .featured-image--portrait {
+    aspect-ratio: auto;
+    height: auto;
+    margin: 0 auto;
+    max-height: 560px;
+    max-width: 100%;
+    object-fit: contain;
+    width: auto;
   }
 
   .featured-image-link:hover .featured-image {
@@ -214,6 +229,12 @@ const base = import.meta.env.BASE_URL;
     filter: grayscale(1);
     object-fit: cover;
     width: 100%;
+  }
+
+  .archive-card img.archive-image--portrait {
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
   }
 
   .archive-card h3 {

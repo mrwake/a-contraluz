@@ -19,12 +19,12 @@ const base = import.meta.env.BASE_URL;
   <article class="interview">
     <a class="back-link" href={base}>← Volver al archivo</a>
     <header class="article-header">
-      <p class="eyebrow">MUESTRA FICTICIA · {entry.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+      <p class="eyebrow">ENTREVISTA · {entry.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
       <h1>{entry.data.title}</h1>
       <p class="person">{entry.data.person}</p>
       <p class="description">{entry.data.description}</p>
     </header>
-    <figure class="portrait">
+    <figure class:list={['portrait', entry.data.coverPortrait && 'portrait--vertical']}>
       <img src={`${base}${entry.data.cover.replace(/^\//, '')}`} alt={entry.data.coverAlt} />
     </figure>
     <div class="prose">
@@ -87,6 +87,17 @@ const base = import.meta.env.BASE_URL;
     filter: grayscale(1);
     object-fit: cover;
     width: 100%;
+  }
+
+  .portrait--vertical img {
+    aspect-ratio: auto;
+    display: block;
+    height: auto;
+    margin-inline: auto;
+    max-height: min(100vh, 780px);
+    max-width: 100%;
+    object-fit: contain;
+    width: auto;
   }
 
   .prose {

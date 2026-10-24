@@ -22,7 +22,7 @@ En Windows PowerShell, si la política del equipo bloquea `npm.ps1`, usa `npm.cm
 3. Pon tu foto en blanco y negro dentro de `public/images/` y actualiza `cover` y `coverAlt` en el bloque inicial. Puedes subir una foto en color: el sitio aplica blanco y negro automáticamente.
 4. Guarda el archivo. En desarrollo la página se actualiza sola. Cambia `draft: true` si quieres ocultar temporalmente una entrevista.
 
-Las entrevistas y los retratos ficticios incluidos son solo demostraciones; reemplázalos antes de publicar. Usa fotografías propias o que tengas permiso para publicar y escribe un texto alternativo que describa la imagen.
+Las entrevistas y los retratos ficticios incluidos son demostraciones; cada entrevista indica si es ficticia. La entrevista de Fernando incluye una fotografía real: confirma que tienes autorización para compartirla antes de publicar el sitio. Usa fotografías que tengas permiso para publicar, especialmente las de menores, y escribe un texto alternativo que describa la imagen.
 
 ## Publicar gratis con GitHub Pages
 

@@ -11,6 +11,7 @@ const interviews = defineCollection({
     person: z.string(),
     cover: z.string(),
     coverAlt: z.string(),
+    coverPortrait: z.boolean().default(false),
     draft: z.boolean().default(false),
   }),
 });
