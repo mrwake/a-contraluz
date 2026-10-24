@@ -5,6 +5,7 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -14,19 +15,19 @@ const { title, description } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#171715" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <title>{title} — A contraluz</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="wordmark" href="/" aria-label="A contraluz, inicio">A CONTRALUZ</a>
+      <a class="wordmark" href={base} aria-label="A contraluz, inicio">A CONTRALUZ</a>
       <span class="header-note">Conversaciones para mirar despacio</span>
     </header>
     <main>
       <slot />
     </main>
     <footer class="site-footer">
-      <a href="/">A CONTRALUZ</a>
+      <a href={base}>A CONTRALUZ</a>
       <span>Hecho con calma, texto a texto.</span>
     </footer>
   </body>

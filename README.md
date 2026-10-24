@@ -24,23 +24,27 @@ En Windows PowerShell, si la política del equipo bloquea `npm.ps1`, usa `npm.cm
 
 Las entrevistas y los retratos ficticios incluidos son solo demostraciones; reemplázalos antes de publicar. Usa fotografías propias o que tengas permiso para publicar y escribe un texto alternativo que describa la imagen.
 
-## Alojamiento en Netlify con GitHub
+## Publicar gratis con GitHub Pages
 
-El proyecto ya incluye `netlify.toml` con el comando de compilación y la carpeta de salida. Para activar publicaciones automáticas:
+El flujo `.github/workflows/deploy-pages.yml` compila Astro y publica `dist/` en GitHub Pages cuando subes cambios a `main`. En los despliegues, Astro ajusta las rutas para el subdirectorio del repositorio; localmente, el sitio conserva las rutas normales.
 
-1. Crea un repositorio en GitHub; puede ser público o privado. El sitio desplegado será público.
-2. Sube el contenido del proyecto al repositorio, pero no incluyas `node_modules/`, `dist/` ni `.astro/`; están excluidos por `.gitignore`.
-3. En Netlify, elige **Add new project → Import an existing project** y conecta tu cuenta de GitHub.
-4. Selecciona el repositorio y confirma estos ajustes si te los pide:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-5. Pulsa **Deploy**. Netlify te dará una dirección temporal `*.netlify.app`. Cada cambio que subas a GitHub podrá generar un nuevo despliegue.
+1. En GitHub, abre **Settings → Pages** del repositorio `mrwake/a-contraluz`.
+2. En **Build and deployment**, selecciona **GitHub Actions** como fuente.
+3. En **Settings → Actions → General**, permite las acciones necesarias para compilar y publicar Pages.
+4. Sube un cambio a `main` o ejecuta manualmente **Actions → Deploy Astro to GitHub Pages → Run workflow**.
+5. Espera a que la acción termine correctamente. La dirección del sitio será `https://mrwake.github.io/a-contraluz/`.
 
-La visibilidad del código en GitHub no cambia la del sitio desplegado: cualquiera podrá ver las páginas publicadas en la web. Las entrevistas ficticias de ejemplo están identificadas como tales; reemplázalas antes de presentar el blog como un archivo de entrevistas reales.
+GitHub Pages tiene límites de uso y, con GitHub Free, el repositorio de publicación debe ser público. Consulta las [condiciones y límites oficiales](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits). Un dominio propio se puede conectar más adelante desde **Settings → Pages**.
+
+## Alojamiento alternativo en Netlify
+
+El proyecto conserva `netlify.toml` por si prefieres seguir usando Netlify. El comando de compilación es `npm run build` y la carpeta de salida, `dist`.
+
+Las entrevistas ficticias de ejemplo están identificadas como tales; reemplázalas antes de presentar el blog como un archivo de entrevistas reales.
 
 ## Dominio propio
 
-El sitio se genera como archivos estáticos: no necesita base de datos ni backend. Cuando compres un dominio, podrás añadirlo desde la configuración del sitio en Netlify y seguir las instrucciones para los registros DNS. Los planes gratuitos y sus condiciones pueden cambiar; revisa límites, privacidad y uso comercial antes de elegir.
+El sitio se genera como archivos estáticos: no necesita base de datos ni backend. Cuando compres un dominio, podrás añadirlo desde **Settings → Pages** en GitHub y seguir las instrucciones para configurar los registros DNS. Los precios y límites pueden cambiar; revisa las condiciones vigentes antes de elegir.
 
 ## Mantenimiento
 
