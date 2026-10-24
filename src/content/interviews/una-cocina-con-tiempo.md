@@ -22,7 +22,7 @@ No hubo un momento de película. Durante años trabajé para otras personas y me
 
 Al principio hacía de todo: compras, cuentas, cocina y hasta arreglar la persiana. Aprendí a pedir ayuda tarde, cuando ya estaba cansada. Ahora intento recordar que cuidar un lugar también significa cuidar a quien lo sostiene.
 
-![Vaso con hielo y una rodaja de limón sobre una mesa de madera en un bar](/images/gin-tonic-bw.jpg)
+<img src="../../images/gin-tonic-bw.jpg" alt="Vaso con hielo y una rodaja de limón sobre una mesa de madera en un bar" />
 
 ## ¿Qué plato te recuerda a alguien?
 
