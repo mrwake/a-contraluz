@@ -9,6 +9,7 @@ const interviews = defineCollection({
     description: z.string(),
     pubDate: z.coerce.date(),
     person: z.string(),
+    format: z.enum(['texto', 'vídeo', 'pódcast']).default('texto'),
     cover: z.string(),
     coverAlt: z.string(),
     coverPortrait: z.boolean().default(false),

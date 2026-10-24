@@ -19,7 +19,7 @@ const base = import.meta.env.BASE_URL;
   <article class="interview">
     <a class="back-link" href={base}>← Volver al archivo</a>
     <header class="article-header">
-      <p class="eyebrow">ENTREVISTA · {entry.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+      <p class="eyebrow">{entry.data.format === 'texto' ? 'ENTREVISTA' : entry.data.format.toUpperCase()} · {entry.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
       <h1>{entry.data.title}</h1>
       <p class="person">{entry.data.person}</p>
       <p class="description">{entry.data.description}</p>
@@ -126,6 +126,31 @@ const base = import.meta.env.BASE_URL;
     margin: 2.5rem auto;
     max-width: 100%;
     width: 100%;
+  }
+
+  .prose :global(video) {
+    aspect-ratio: 16 / 9;
+    background: #000;
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .prose :global(audio) {
+    display: block;
+    width: 100%;
+  }
+
+  .prose :global(figure.media-player) {
+    margin: 2.5rem 0;
+  }
+
+  .prose :global(figure.media-player figcaption) {
+    color: var(--muted);
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    margin-top: 0.75rem;
   }
 
   .prose :global(blockquote) {

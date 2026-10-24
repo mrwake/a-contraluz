@@ -20,7 +20,10 @@ En Windows PowerShell, si la política del equipo bloquea `npm.ps1`, usa `npm.cm
 1. Duplica `src/content/interviews/primer-encuentro.md` y cambia el nombre, por ejemplo `mi-entrevista.md`.
 2. Completa el título, la descripción, la fecha, la persona entrevistada y el texto. Cada pregunta es un encabezado `##` y cada respuesta, uno o varios párrafos.
 3. Pon tu foto en blanco y negro dentro de `public/images/` y actualiza `cover` y `coverAlt` en el bloque inicial. Puedes subir una foto en color: el sitio aplica blanco y negro automáticamente.
-4. Guarda el archivo. En desarrollo la página se actualiza sola. Cambia `draft: true` si quieres ocultar temporalmente una entrevista.
+4. Si vas a incluir un vídeo o un pódcast, cambia `format` a `vídeo` o `pódcast`, guarda el archivo de audio o vídeo en `public/media/` y añade un reproductor HTML `<video controls>` o `<audio controls>` al contenido. Consulta las entradas de ejemplo para ver el formato, las transcripciones y el crédito del vídeo.
+5. Guarda el archivo. En desarrollo la página se actualiza sola. Cambia `draft: true` si quieres ocultar temporalmente una entrevista.
+
+La entrada de vídeo es ficticia y utiliza un clip de flores con licencia CC0. El ejemplo de pódcast incluye un guion ficticio y una narración sintética; no es una grabación real.
 
 Las entrevistas y los retratos ficticios incluidos son demostraciones; cada entrevista indica si es ficticia. La entrevista de Fernando incluye una fotografía real: confirma que tienes autorización para compartirla antes de publicar el sitio. Usa fotografías que tengas permiso para publicar, especialmente las de menores, y escribe un texto alternativo que describa la imagen.
 
